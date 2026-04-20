@@ -7,34 +7,89 @@
 </head>
 <body>
 
+    <!-- BARRA DE AVISOS -->
+    <div class="top-bar">
+        Última hora: Nuevo parque inaugurado en la ciudad
+    </div>
+
     <header>
         <img src="img/logo.png">
         <h1>El Faro</h1>
+        <div id="fechaHora"></div>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="deporte.html">Deporte</a>
-        <a href="negocios.html">Negocios</a>
+    <!-- NAV MEJORADO -->
+    <nav class="main-nav">
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="deporte.html">Deporte</a>
+            <a href="negocios.html">Negocios</a>
+        </div>
+
+        <div class="extra-links">
+            <button>☰ Secciones</button>
+        </div>
     </nav>
 
-    <section>
-        <h2>Noticias Generales</h2>
-        <table>
-            <tr><th>Título</th><th>Categoría</th><th>Contenido</th></tr>
-            <tr><td>Inauguración de nuevo parque</td><td>Ciudad y urbanismo</td><td>En el pueblo de Comala se vive la vida al aire libre, este lunes se llavó a cabo la inauguración del nuevo y único parque de la ciudad, atrás quedaron las tardes en la pila de pasto cortado que era el único punto verde de la ciudad.</td></tr>
-            <tr><td>Se reporta alza en el turismo local</td><td>Turismo y ocio</td><td>Aumenta el turismo en la ciudad de Salamanca, las autoridades descartan que haya sido debido a la layenda urbana de las brujas, adjudicándolo al buen manejo publicitario de la ciudad.</td></tr>
-            <tr><td>Museos abren sus puertas de manera gratuita al público</td><td>Cultura</td><td>Durante este fin de semana los Museos de todo Chile abrirán de manera gratuita sus puertas en el marco del evento "todos gratis todo cultural".</td></tr>
-        </table>
+    <main class="contenedor">
 
-        <video controls>
-            <source src="media/video.mp4">
-        </video>
+        <!-- ARTÍCULO DESTACADO -->
+        <section class="destacado">
+            <h2>Inauguración de nuevo parque</h2>
+            <p>
+                En el pueblo de Comala se vive la vida al aire libre...
+            </p>
+        </section>
 
-        <audio controls>
-            <source src="media/audio.mp3">
-        </audio>
-    </section>
+        <!-- ARTÍCULOS SECUNDARIOS -->
+        <section class="articulos">
+            <article>
+                <h3>Alza en turismo</h3>
+                <p>Aumenta el turismo en Salamanca...</p>
+            </article>
+
+            <article>
+                <h3>Museos gratuitos</h3>
+                <p>Museos abren sus puertas...</p>
+            </article>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="formulario">
+            <h3>Agregar nuevo artículo</h3>
+
+            <input type="text" placeholder="Título">
+            <input type="text" placeholder="Categoría">
+            <textarea placeholder="Contenido"></textarea>
+            <button>Publicar</button>
+        </section>
+
+    </main>
+
+    <!-- FOOTER GRANDE -->
+    <footer>
+        <div class="footer-contenido">
+            <div>
+                <h4>El Faro</h4>
+                <p>Portal de noticias moderno</p>
+            </div>
+
+            <div>
+                <h4>Secciones</h4>
+                <p>Deporte</p>
+                <p>Negocios</p>
+            </div>
+
+            <div>
+                <h4>Contacto</h4>
+                <p>correo@elfaro.cl</p>
+            </div>
+        </div>
+
+        <p class="copyright">© 2026 El Faro</p>
+    </footer>
+
+</body>
 
     <footer>© 2026 El Faro</footer>
 
